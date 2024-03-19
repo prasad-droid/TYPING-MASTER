@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Master</title>
+  </head>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  <script src={%static "script.js" %}></script>
+  <link rel="stylesheet" href={%static "style.css" %}/>
+  <body>
+    <div class="main">
+      <div class="background">
+        <div id="imgposition">
+          <img
+            src={% static "Screenshot_2024-02-06_134247-removebg-preview.png" %}
+            alt=""
+            srcset=""
+          />
+          <span class="textcolor mt-4">boost your typing speed</span>
+        </div>
+        <div class="sidebar">
+          <img
+            src={% static "Screenshot_2024-02-06_134247-removebg-preview.png" %}
+            alt=""
+            srcset=""
+            id="cover"
+          />
+          <div class="option">
+            <a href="into">introduction</a>
+            <a href="typingtest">Typing Test</a>
+            <a href="game">Typing Games</a>
+            <a href="profile">profile</a>
+          </div>
+        </div>
+
+        <div class="slider">
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src={%static "TTrainer_slide_1.png" %}
+                  alt="Los Angeles"
+                  class="d-block"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src={%static "TTrainer_slide_2.png" %}
+                  alt="Chicago"
+                  class="d-block"
+                  style="width: 100%"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src={%static "TTrainer_slide_4.png" %}
+                  alt="New York"
+                  class="d-block"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="button">
+          <a href="into">  <button class="btn btn-outline-warning submit mt-4">
+        Introduction 
+          </button></a> 
+          <a href="typingtest"> <button class="btn btn-outline-warning back mt-4">
+          start Test
+          </button></a>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    
+    <h3>Username : {{data.username}}</h3>
+    <h3>Email : {{data.email}}</h3>
+    <h1>Score</h1>
+    <h3 id="wpm">Highest Wpm : </h3>
+    <h3 id="cpm">Highest Cpm : </h3>
+
+    <script>
+        document.getElementById('wpm').innerHTML+= localStorage.getItem('WPM')+' word'
+        document.getElementById('cpm').innerHTML+= localStorage.getItem('CPM')+' characters'
+    </script>
+
+</body> 
+</html>

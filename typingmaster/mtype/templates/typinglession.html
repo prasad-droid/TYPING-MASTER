@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Master</title>
+  </head>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  <script src={%static "script.js" %}></script>
+  <link rel="stylesheet" href={%static "style.css" %}/>
+    <title>Typing Master</title>
+    <style>
+      #imgposition{
+        left: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="background">
+        <div class="lession">
+          <div id="imgposition">
+            <img
+              src={% static "Screenshot_2024-02-06_134247-removebg-preview.png" %}
+              alt=""
+              srcset=""
+            />
+            <span class="textcolor mt-4">boost your typing speed</span>
+          </div>
+          <hr />
+          <h3 class="text-center">Typing Lession</h3>
+          <ul class="grid text-center pt-4">
+            <li><a href="">1) introduction </a></li>
+            <li><a href=""> 2) the home rows </a></li>
+            <li><a href=""> 3) day 1</a></li>
+            <li><a href=""> 4) day 2 </a></li>
+            <li><a href=""> 5) day 3</a></li>
+            <li><a href="">6) day 4</a></li>
+            <li><a href=""> 7) day 5</a></li>
+            <li><a href=""> 8) day 6</a></li>
+            <li><a href=""> 9) day 7</a></li>
+            <li><a href="">10) day 8</a></li>
+            <li><a href="">11) day 9</a></li>
+            <li><a href="">12) day 10</a></li>
+            <li><a href="">13) tip and tricks</a></li>
+            <li><a href="">14) avoide causes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

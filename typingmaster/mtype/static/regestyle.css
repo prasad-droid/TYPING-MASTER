@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+}
+body{
+    background: url("./blue.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.main{
+    width: 380px;
+    height: 400px;
+    background-color:transparent;
+    color: #0c0c0c;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 , 0, 0,.2;
+    border-radius: 10px;
+    padding: 30px 40px;
+    background:linear-gradient(rgb(164, 217, 250),rgb(246, 249, 250),rgb(242, 245, 246),white);
+}
+.main h1{
+    font-size: 45px;
+    text-align: center;
+}
+.main .input-box{
+    width: 100%;
+    height: 80px;
+    background:transparent;
+}
+.input-box input{
+    width: 91%;
+    height: 30%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(12, 12, 12, 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #0b0a0a;
+    padding: 20px ;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+.input-box input::placeholder{
+    color: #0b0a0a;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px
+}
+.main .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15 0 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.remember label input{
+    accent-color: #0a0a0a;
+    margin-right: 3px;
+}
+.remember a{
+    color: #0c0c0c;
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+
+}
+button{
+    width: 100%;
+    height: 45px;
+    background: #7dcfff;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(249, 248, 248, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #070707;
+    font-weight: 800;
+}
+.main .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.register-link p a{
+    color:#0b0a0a;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}

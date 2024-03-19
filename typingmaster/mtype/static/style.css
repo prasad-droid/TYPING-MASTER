@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.background {
+  background-color: #94e5f3;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slider {
+  width: 60%;
+  position: absolute;
+  top: 17%;
+  left: 27%;
+}
+
+.sidebar {
+  background-color: rgb(42, 143, 180);
+  height: 100vh;
+  width: 20vw;
+}
+#cover {
+  width: 20vw;
+  padding-left: 5px;
+}
+#imgposition {
+  position: absolute;
+  left: 20%;
+}
+.option {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  height: 80vh;
+}
+.textcolor {
+  font-size: 24px;
+  color: blue;
+  text-transform: capitalize;
+}
+.option a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 15px;
+}
+.submit {
+  position: absolute;
+  top: 85%;
+  left: 40%;
+}
+.back {
+  position: absolute;
+  top: 85%;
+  left: 60%;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+/* typing test modules */
+.background2 {
+  background: url("./white-background-with-hexagonal-line-pattern-design_1017-28442.png");
+  background-size: cover;
+  height: 110vh;
+}
+.typingbackground {
+  background-size: cover;
+  display: block;
+  margin: auto;
+  border: 1px solid;
+  width: 650px;
+  margin-top: 10%; /* changes according pc */
+  height: 450px;
+}
+.time {
+  display: flex;
+  justify-content: space-around;
+}
+.contanior {
+  display: flex;
+  justify-content: space-around;
+}
+.input_area {
+  height: 70px;
+  width: 70%;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+  outline: 1px solid;
+}
+.quote {
+  cursor: pointer;
+}
+.header_text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.cpm,
+.wpm {
+  display: none;
+}
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: rgb(10, 83, 1);
+}
+
+/* lession */
+.lession {
+  background: url("./desktop-wallpaper-blue-and-white-background-23-background-1024×768-in-2020-blue-and-white-blue-background-blue-white-background-1024x768-blue.jpg");
+  height: 90vh;
+  margin-top: 4%;
+  margin-left: 1%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 800px;
+}
+hr {
+  margin-top: 13%;
+}
+
+li {
+  list-style-type: decimal;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  text-transform: capitalize;
+}
